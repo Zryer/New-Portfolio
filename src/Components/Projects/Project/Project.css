@@ -1,0 +1,66 @@
+.projectContainer {
+    overflow: hidden;
+}
+
+.projectCard {
+    text-align: center;
+    width: 100vw;
+    height: 50vh;
+    animation-name: move-up;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    overflow: hidden;
+}
+
+.cardImage {
+    max-width: 100%;
+    height: auto;
+}
+
+#codeButton {
+    color: darkorange;
+    background: linear-gradient(to right, white, lightblue);
+    position: absolute;
+    bottom: 20px;
+    right: 140px;
+
+}
+
+#liveButton {
+    color: darkorange;
+    background: linear-gradient(to right, white, lightblue);
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
+#codeButton:hover , #liveButton:hover {
+    animation-duration: 5s;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        background: linear-gradient(to right, red, purple);
+        opacity: 50%;
+    }
+
+    75% {
+        background: linear-gradient(to right, red, purple);
+    }
+
+    to {
+        opacity: 100%;
+        background: linear-gradient(to right, red, purple);
+    }
+}
+
+@keyframes move-up {
+    0% {
+        transform: translateY(100vh);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
