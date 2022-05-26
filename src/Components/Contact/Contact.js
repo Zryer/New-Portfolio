@@ -3,16 +3,18 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import './Contact.css';
+
 const Contact = () => {
   return (
-    <Container id="Contact">
+    <Container fluid id="Contact" className="contactContainer">
     <Row>
       <Col>
-        <h1 style={{color: "white"}}>Contact</h1>
+        <h1 style={{color: ""}}>Contact</h1>
       </Col>
     </Row>
     </Container>
   )
 }
 
-export default Contact
+export default Contact;

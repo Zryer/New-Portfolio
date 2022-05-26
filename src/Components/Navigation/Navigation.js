@@ -20,7 +20,7 @@ const Navigation = () => {
         <Nav.Link className="navigationLink" href="#About">About</Nav.Link>
         <Nav.Link className="navigationLink" href="#Projects">Projects</Nav.Link>
         <Nav.Link className="navigationLink" href="#Contact">Contact</Nav.Link>
-        <Button className="navigationLink" size="lg" style={{ backgroundColor: "#E67E22", border: "none", borderRadius: "", margin: "0", paddingLeft: ".5rem", paddingRight: ".5rem", fontSize: "1.5rem" }} href="https://www.youtube.com/watch?v=gnV-8pkILF0&ab_channel=Proximity" target="_blank">Resume</Button>
+        <Button className="navigationLink" size="lg" style={{ backgroundColor: "#E67E22", border: "none", borderRadius: "", margin: "0", paddingLeft: ".5rem", paddingRight: ".5rem", fontSize: "1.5rem" }} href="#" target="_blank">Resume</Button>
         </Nav>
       </Navbar.Collapse>
       </Container>
