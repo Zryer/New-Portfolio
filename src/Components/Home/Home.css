@@ -1,36 +1,48 @@
-.homeName {
-    font-size: 4rem;
-    color: #FAF9F6;
-}
-
 .breakWord {
     display: none;
 }
 
-.secondText {
+.homeSpan {
+    color: #FAF9F6;
     font-size: 3rem;
+}
+
+.homeSpanName {
+    color: #FE6F27;
+    font-size: 4rem;
+    /* "#F39C12" */
+}
+
+@media (min-width: 1921px) {
+    .homeSpan {
+        font-size: 8rem;
+    }
+
+    .homeSpanName {
+        font-size: 9rem;
+    }
 }
 
 .homeContainer {
     height: 100vh;
     text-align: center;
-    margin-top: 5rem;
+    padding-top: 5rem;
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-timing-function: linear;
 }
 
 @keyframes fadeIn {
-    0%{
+    0% {
         opacity: 0%;
     }
 
-    100%{
+    100% {
         opacity: 100%;
     }
 }
 
-#homeButtons{
+#homeButtons {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -41,26 +53,26 @@
     opacity: 85%;
 }
 
-.homeButton:hover > .buttonIcon {
+.homeButton:hover>.buttonIcon {
     animation: iconMove;
     animation-duration: 0.8s;
     animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
 }
 
 @keyframes iconMove {
-    0%{
+    0% {
         transform: translateY(0);
     }
 
-    25%{
+    25% {
         transform: translateY(-30px);
     }
 
-    50%{
+    50% {
         transform: translateY(0);
     }
 
-    75%{
+    75% {
         transform: translateY(-15px);
     }
 
@@ -79,7 +91,7 @@
     }
 
     .breakWord {
-        display:initial;
+        display: initial;
     }
 }
 

@@ -1,0 +1,28 @@
+.aboutContainer {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    background-color: #F8F0E3;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.aboutTitle {
+    text-align: center;
+}
+
+.aboutContent {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.skillsContent {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

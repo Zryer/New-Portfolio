@@ -9,12 +9,12 @@ import Logo from '../../Assets/Images/Logo.png';
 import './Navigation.css';
 
 const Navigation = () => {
-  
+
   return (
-    <Navbar collapseOnSelect expand="lg" sticky="top">
+    <Navbar collapseOnSelect expand="lg" sticky="top" style={{backgroundColor: "#222733"}}>
       <Container fluid>
-      <Navbar.Brand style={{padding: " 1vw 0 1vw 1vw", cursor: "pointer"}} href="#Home"><Image src={Logo} style={{height: "50px", width: "50px"}} /></Navbar.Brand>
-      <Navbar.Toggle />
+      <Navbar.Brand style={{padding: " 1vw 0 1vw 1vw", cursor: "pointer"}} href="#Home"><Image src={Logo} style={{height: "50px", width: "50px"}} alt="logo" /></Navbar.Brand>
+      <Navbar.Toggle style={{backgroundColor: "#FE6F27"}} />
       <Navbar.Collapse style={{justifyContent: "flex-end"}}>
         <Nav style={{padding: " 1vw 1vw 1vw 0"}}>
         <Nav.Link className="navigationLink" href="#About">About</Nav.Link>
