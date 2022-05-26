@@ -7,9 +7,10 @@ import { PROJECTS } from '../../Assets/PROJECTS';
 
 const Projects = () => {
   return (
-    <Container>
+    <Container id="Projects">
       <Row>
         <Col>
+          <h1 style={{ color: "white"}}>Projects</h1>
           <Project PROJECTS={PROJECTS}></Project>
         </Col>
       </Row>

@@ -1,0 +1,14 @@
+.loadAnimation {
+    animation-name: fadeAway;
+    animation-duration: 2.1s;
+}
+
+@keyframes fadeAway {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }

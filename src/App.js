@@ -1,22 +1,35 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import Projects from './Components/Projects/Projects';
 import Home from './Components/Home/Home';
-import Navbar from './Components/Navigation/Navigation';
+import LoadingScreen from './Components/LoadingScreen/LoadingScreen';
+import Navigation from './Components/Navigation/Navigation';
 
 const App = () => {
+
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 2000)
+    }, [])
+
     return (
-        <BrowserRouter>
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="About" element={<About />} />
-                <Route path="Contact" element={<Contact />} />
-                <Route path="Projects" element={<Projects />} />
-            </Routes>
-        </BrowserRouter>
+        <>
+            {loading === false ? (
+                <>
+                    <Navigation />
+                    <Home />
+                    <About />
+                    <Projects />
+                    <Contact />
+                </>
+
+            ) : (
+                <LoadingScreen />
+            )}
+        </>
+
     )
 };
 

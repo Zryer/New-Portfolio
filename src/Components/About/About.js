@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 
 const About = () => {
   return (
-      <Container>
+      <Container id="About" style={{ height: "100vh", backgroundColor: "orange" }}>
         <Row>
           <Col>
               <h1 style={{color: "white"}}>Hello</h1>

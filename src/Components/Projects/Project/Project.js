@@ -11,23 +11,23 @@ const Project = ({ PROJECTS }) => {
     return (
         <Container className="projectContainer">
             <Row>
-                    {PROJECTS.map((arr) => {
-                        return (
-                            <Col key={arr.Id} className="projectCard" xs={12} lg={6}>
-                            <Card>
-                                <Card.Img className="cardImage" src={arr.Img} alt={arr.Alt} />
-                                <Card.ImgOverlay>
-                                    <Card.Body>
-                                        <Card.Title>{arr.Name}</Card.Title>
-                                        <Card.Text>{arr.Desc}</Card.Text>
-                                        <Button href={arr.Code} target="_blank" id="codeButton">Code</Button>
-                                        <Button href={arr.Live} target="_blank" id="liveButton">Live demo</Button>
-                                    </Card.Body>
-                                </Card.ImgOverlay>
+                {PROJECTS.map((arr) => {
+                    return (
+                        <Col key={arr.Id} style={{ textAlign: "center", marginBottom: "1.5rem" }} xs={12} lg={6}>
+                            <Card style={{ border: "none" }}>
+                                <Card.Img src={arr.Img} alt={arr.Alt} />
+                                <Card.Body>
+                                    <Card.Title>{arr.Name}</Card.Title>
+                                    <Card.Text>{arr.Desc}</Card.Text>
+                                    <Col style={{ display: "flex", justifyContent: "space-evenly" }}>
+                                        <Button href={arr.Code} target="_blank" style={{ width: "80px", color: "#FE6F27" }}>Code</Button>
+                                        <Button href={arr.Live} target="_blank" style={{ width: "80px", color: "#FE6F27" }}>Live</Button>
+                                    </Col>
+                                </Card.Body>
                             </Card>
-                            </Col>
-                        )
-                    })}
+                        </Col>
+                    )
+                })}
             </Row>
         </Container>
     )

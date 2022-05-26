@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 
 const Contact = () => {
   return (
-    <Container>
+    <Container id="Contact">
     <Row>
       <Col>
         <h1 style={{color: "white"}}>Contact</h1>

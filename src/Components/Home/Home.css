@@ -12,8 +12,22 @@
 }
 
 .homeContainer {
+    height: 100vh;
     text-align: center;
     margin-top: 5rem;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
 }
 
 #homeButtons{

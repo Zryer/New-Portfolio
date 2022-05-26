@@ -1,11 +1,11 @@
 .navigationLink {
-    color: white;
     font-size: 1.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
     text-decoration: none;
+    color: #FAF9F6 !important ;
 }
 
 .navigationLink:hover {
-    color: orange;
+    color: #FE6F27 !important;
 }
