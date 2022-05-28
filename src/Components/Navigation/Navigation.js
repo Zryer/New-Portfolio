@@ -2,7 +2,6 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 
 import Logo from '../../Assets/Images/Logo.png';
@@ -20,7 +19,6 @@ const Navigation = () => {
         <Nav.Link className="navigationLink" href="#About">About</Nav.Link>
         <Nav.Link className="navigationLink" href="#Projects">Projects</Nav.Link>
         <Nav.Link className="navigationLink" href="#Contact">Contact</Nav.Link>
-        <Button className="navigationLink" size="lg" style={{ backgroundColor: "#E67E22", border: "none", borderRadius: "", margin: "0", paddingLeft: ".5rem", paddingRight: ".5rem", fontSize: "1.5rem" }} href="#" target="_blank">Resume</Button>
         </Nav>
       </Navbar.Collapse>
       </Container>

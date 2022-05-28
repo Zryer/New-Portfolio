@@ -7,8 +7,8 @@ export const PROJECTS = [
         Img: zach,
         Alt: "This is project alt",
         Desc: "This is project 1",
-        Code: "https://www.youtube.com/",
-        Live: "https://www.youtube.com/",
+        Code: "#",
+        Live: "#",
     },
     {
         Id: "1",

@@ -4,12 +4,14 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Project from './Project/Project';
 
+import './Projects.css';
+
 const Projects = () => {
   return (
-    <Container id="Projects">
+    <Container id="Projects" className="projectsContainer">
       <Row>
         <Col>
-          <h1 style={{ color: "white"}}>Projects</h1>
+          <h1 style={{ color: "white", textAlign: "center"}} className="projectsTitle">Projects</h1>
           <Project></Project>
         </Col>
       </Row>

@@ -1,7 +1,8 @@
 .aboutContainer {
-    padding-top: 7rem;
-    padding-bottom: 5rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     background-color: #F8F0E3;
+    max-width: 100%;
 }
 
 .icons {
@@ -14,12 +15,13 @@
 
 .aboutTitle {
     text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 3rem !important;
 }
 
 .aboutContent {
     padding-left: 1rem;
     padding-right: 1rem;
-    text-align: center;
 }
 
 .skillsContent {

@@ -12,13 +12,13 @@ const About = () => {
     <Container fluid id="About" className="aboutContainer">
       <Row>
         <Col className="aboutTitle" xs={12}>
-          <h1>About me</h1>
+          <h1>Full-Stack Developer | Nucamp Bootcamp Graduate</h1>
         </Col>
         <Col className="aboutContent" xs={12}>
           <Container>
             <Row>
               <Col>
-                <p style={{ color: "#000", fontSize: "2rem" }}>Hello! My name is Zachary and I enjoy building projects and learning about web development.<br />I graduated from Nucamp Coding Bootcamp where I learned the trades of a Full-Stack Developer.</p>
+                <p style={{ color: "#000", fontSize: "2rem" }}>Hello! My name is Zachary and I enjoy building projects and learning about web development. I graduated from Nucamp Coding Bootcamp where I learned the skills of a Full-Stack Developer.</p>
               </Col>
             </Row>
           </Container>

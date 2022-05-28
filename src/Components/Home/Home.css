@@ -13,16 +13,6 @@
     /* "#F39C12" */
 }
 
-@media (min-width: 1921px) {
-    .homeSpan {
-        font-size: 8rem;
-    }
-
-    .homeSpanName {
-        font-size: 9rem;
-    }
-}
-
 .homeContainer {
     height: 100vh;
     text-align: center;
@@ -30,6 +20,67 @@
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-timing-function: linear;
+}
+
+.contactButtons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+#secondRowButtons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.secondRowButtons {
+    background-color: #FE6F27 !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 1.25rem !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.homeButton:hover {
+    opacity: 85%;
+}
+
+.homeButton:hover>.buttonIcon {
+    animation: iconMove;
+    animation-duration: 3.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+
+@keyframes iconMove {
+    0% {
+        transform: translateY(0);
+    }
+
+    6.25% {
+        transform: translateY(-30px);
+    }
+
+    12.5% {
+        transform: translateY(0);
+    }
+
+    18.75% {
+        transform: translateY(-15px);
+    }
+
+    25% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @keyframes fadeIn {
@@ -42,51 +93,26 @@
     }
 }
 
-#homeButtons {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 5rem;
-}
-
-.homeButton:hover {
-    opacity: 85%;
-}
-
-.homeButton:hover>.buttonIcon {
-    animation: iconMove;
-    animation-duration: 0.8s;
-    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
-}
-
-@keyframes iconMove {
-    0% {
-        transform: translateY(0);
+@media (max-width: 575px) {
+    .homeSpan {
+        font-size: 2rem;
     }
 
-    25% {
-        transform: translateY(-30px);
+    .homeSpanName {
+        font-size: 2.5rem;
     }
 
-    50% {
-        transform: translateY(0);
-    }
-
-    75% {
-        transform: translateY(-15px);
-    }
-
-    100% {
-        transform: translateY(0);
+    .secondRowButtons {
+        font-size: 0.9rem !important;
     }
 }
 
-@media (max-width: 992px) {
-    .homeName {
+@media (max-width: 991px) {
+    .homeSpanName {
         font-size: 3rem;
     }
 
-    .secondText {
+    .homeSpan {
         font-size: 1.5rem;
     }
 
@@ -95,24 +121,14 @@
     }
 }
 
+
 @media (min-width: 2000px) {
-    .homeName {
-        font-size: 10rem;
+
+    .homeSpan {
+        font-size: 8rem;
     }
 
-    .secondText {
+    .homeSpanName {
         font-size: 9rem;
-    }
-
-    #btn-1 {
-        font-size: 5rem;
-    }
-
-    #btn-2 {
-        font-size: 5rem;
-    }
-
-    #btn-3 {
-        font-size: 5rem;
-    }
+}
 }
