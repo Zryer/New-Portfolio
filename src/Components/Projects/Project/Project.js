@@ -17,7 +17,7 @@ const Project = () => {
                     return (
                         <Col key={arr.Id} style={{ textAlign: "center", marginBottom: "1.5rem" }} xs={12} lg={6}>
                             <Card style={{ border: "none" }}>
-                                <Card.Img src={arr.Img} alt={arr.Alt} />
+                                <Card.Img src={arr.Img} alt={arr.Alt} width= "20%" height="20%" />
                                 <Card.Body>
                                     <Card.Title>{arr.Name}</Card.Title>
                                     <Card.Text>{arr.Desc}</Card.Text>

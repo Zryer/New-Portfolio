@@ -29,7 +29,7 @@ const Contact = () => {
       <Row>
         <Col xs={12}>
           <Form action="https://formspree.io/f/xjvllrey" method="POST" encType="multipart/form-data" target="_blank" className="contactForm">
-            <Row>
+            <Row style={{marginBottom: "2rem"}}>
             <Form.Group as={Col} xs={6}>
               <FloatingLabel label="Name">
                 <Form.Control required type="text" id="name" name="name" placeholder="Name" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
@@ -41,15 +41,17 @@ const Contact = () => {
               </FloatingLabel>
             </Form.Group>
             </Row>
-            <Form.Group>
+            <Row style={{marginBottom: "2rem"}}>
+            <Form.Group as={Col} xs={12}>
               <FloatingLabel label="Message">
                 <Form.Control required type="text" id="message" name="message" as="textarea" placeholder="Enter Message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} />
               </FloatingLabel>
             </Form.Group>
-            <Button type="submit">
+            </Row>
+            <Button type="submit" xs={2}>
               Submit
             </Button>
-            <Button onClick={clear}>
+            <Button onClick={clear} xs={2}>
               Clear
             </Button>
           </Form>

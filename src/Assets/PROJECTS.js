@@ -1,14 +1,15 @@
-import zach from './Images/zachpose.jpg';
+import zach from './Images/zachpose.webp';
+import sakura from './Images/sakuraWelcome.webp';
 
 export const PROJECTS = [
     {
         Id: "0",
-        Name: "Project 1",
-        Img: zach,
-        Alt: "This is project alt",
-        Desc: "This is project 1",
-        Code: "#",
-        Live: "#",
+        Name: "Chura Photography",
+        Img: sakura,
+        Alt: "Chura Photography",
+        Desc: "I built this project for a photographer. I used React and ReactRouterDOM for routing.",
+        Code: "https://github.com/Zryer/Chura-Photography",
+        Live: "https://zryer.github.io/Chura-Photography/",
     },
     {
         Id: "1",

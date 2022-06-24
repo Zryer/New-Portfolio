@@ -24,7 +24,20 @@
     padding-right: 1rem;
 }
 
+.aboutContentParagraph {
+    color: #000; 
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
 .skillsContent {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+@media (max-width: 992px) {
+    .aboutContentParagraph {
+        font-size: 1rem;
+    }
 }

@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Image from 'react-bootstrap/Image';
 
-import Logo from '../../Assets/Images/Logo.png';
+import Logo from '../../Assets/Images/Logo.webp';
 import './Navigation.css';
 
 const Navigation = () => {
