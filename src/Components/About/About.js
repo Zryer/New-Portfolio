@@ -35,7 +35,7 @@ const About = () => {
                 return (
                   <Col key={arr.id} xs={4} sm={3} className="icons">
                     <FontAwesomeIcon icon={arr.icon} style={{ fontSize: "3rem", color: `${arr.color}` }} />
-                    <h6>{arr.tag}</h6>
+                    <p>{arr.tag}</p>
                   </Col>
                 )
               })}
