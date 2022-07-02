@@ -1,7 +1,7 @@
 {
   "name": "zach_portfolio",
   "version": "0.1.0",
-  "homepage": "https://zryer.github.io",
+  "homepage": "http://zryer.github.io/New-Portfolio",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
