@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/New-Portfolio/static/css/main.2cfb6d1d.css",
-    "main.js": "/New-Portfolio/static/js/main.03f95c42.js",
-    "static/media/sakuraWelcome.webp": "/New-Portfolio/static/media/sakuraWelcome.886e9ff206c7ca469023.webp",
-    "static/media/zachpose.webp": "/New-Portfolio/static/media/zachpose.cbee84ff714585760800.webp",
-    "static/media/Resume.pdf": "/New-Portfolio/static/media/Resume.dc86a6f1cd7a8bc45628.pdf",
-    "static/media/Logo.webp": "/New-Portfolio/static/media/Logo.d105f198bbb6a770de5d.webp",
-    "index.html": "/New-Portfolio/index.html",
-    "main.2cfb6d1d.css.map": "/New-Portfolio/static/css/main.2cfb6d1d.css.map",
-    "main.03f95c42.js.map": "/New-Portfolio/static/js/main.03f95c42.js.map"
+    "main.css": "/static/css/main.2cfb6d1d.css",
+    "main.js": "/static/js/main.bcffe242.js",
+    "static/media/sakuraWelcome.webp": "/static/media/sakuraWelcome.886e9ff206c7ca469023.webp",
+    "static/media/zachpose.webp": "/static/media/zachpose.cbee84ff714585760800.webp",
+    "static/media/Resume.pdf": "/static/media/Resume.dc86a6f1cd7a8bc45628.pdf",
+    "static/media/Logo.webp": "/static/media/Logo.d105f198bbb6a770de5d.webp",
+    "index.html": "/index.html",
+    "main.2cfb6d1d.css.map": "/static/css/main.2cfb6d1d.css.map",
+    "main.bcffe242.js.map": "/static/js/main.bcffe242.js.map"
   },
   "entrypoints": [
     "static/css/main.2cfb6d1d.css",
-    "static/js/main.03f95c42.js"
+    "static/js/main.bcffe242.js"
   ]
 }
