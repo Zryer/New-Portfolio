@@ -11,7 +11,7 @@ const Projects = () => {
     <Container id="Projects" className="projectsContainer">
       <Row>
         <Col>
-          <h1 style={{ color: "white", textAlign: "center"}} className="projectsTitle">Projects</h1>
+          <h1 style={{ color: "white", textAlign: "center"}} className="projectsTitle">Recent Projects</h1>
           <Project></Project>
         </Col>
       </Row>
