@@ -3,6 +3,30 @@
     padding-top: 3rem;
 }
 
-.contactForm {
+.formInputs {
+    margin-bottom: 1rem;
+    border: none;
+}
 
+.formData {
+    font-weight: bold !important;
+    color: #000000 !important
+}
+
+.formButton {
+    background-color: #222733 !important;
+    border: none !important;
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    border-radius: 50px !important;
+}
+
+.label {
+    color: #aaaaaa;
+}
+
+.label:focus-within {
+    color: #222733;
 }

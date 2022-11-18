@@ -15,10 +15,6 @@ const Contact = () => {
 
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
-  const clear = () => {
-    setFormData({ name: '', email: '', message: '' });
-  }
-
   return (
     <Container fluid id="Contact" className="contactContainer">
       <Row>
@@ -26,33 +22,28 @@ const Contact = () => {
           <h1 style={{ color: "", textAlign: "center" }}>Contact</h1>
         </Col>
       </Row>
-      <Row>
-        <Col xs={12}>
-          <Form action="https://formspree.io/f/xjvllrey" method="POST" encType="multipart/form-data" target="_blank" className="contactForm">
+      <Row style={{ display: "flex", justifyContent: "center"}}>
+        <Col xs={12} md={8}>
+          <Form action="https://formspree.io/f/xjvllrey" method="POST" encType="multipart/form-data" target="_blank">
             <Row style={{ marginBottom: "2rem" }}>
-              <Form.Group as={Col} xs={6}>
-                <FloatingLabel label="Name">
-                  <Form.Control required type="text" id="name" name="name" placeholder="Name" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
+              <Col xs={12} className="formInputs">
+                <FloatingLabel label="Name" className="label">
+                  <Form.Control className="formData" required type="text" id="name" name="name" placeholder="Name" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
                 </FloatingLabel>
-              </Form.Group>
-              <Form.Group as={Col} xs={6}>
-                <FloatingLabel label="Email">
-                  <Form.Control required type="email" id="email" name="email" placeholder="Enter Email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
+              </Col>
+              <Col xs={12} className="formInputs">
+                <FloatingLabel label="Email" className="label">
+                  <Form.Control className="formData" required type="email" id="email" name="email" placeholder="Enter Email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                 </FloatingLabel>
-              </Form.Group>
+              </Col>
+              <Col xs={12} className="formInputs">
+                <FloatingLabel label="Message" className="label">
+                  <Form.Control className="formData" required type="text" id="message" name="message" as="textarea" placeholder="Enter Message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} />
+                </FloatingLabel>
+              </Col>
             </Row>
-            <Row style={{ marginBottom: "2rem" }}>
-              <Form.Group as={Col} xs={12}>
-                <FloatingLabel label="Message">
-                  <Form.Control required type="text" id="message" name="message" as="textarea" placeholder="Enter Message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} />
-                </FloatingLabel>
-              </Form.Group>
-            </Row>
-            <Button type="submit" xs={2}>
-              Submit
-            </Button>
-            <Button onClick={clear} xs={2}>
-              Clear
+            <Button type="submit" className="formButton" as={Col} xs={12}>
+              SUBMIT
             </Button>
           </Form>
         </Col>
